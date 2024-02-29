@@ -1,0 +1,33 @@
+/*
+CSS Stylesheet for grades.html
+Abe Dresler 29Feb2024
+*/
+
+* {
+    height:50px;
+    font-size: 25px;
+}
+
+table {
+    width:35%;
+    border-collapse: collapse;
+}
+
+thead, tfoot {
+    font-weight:bold;
+    background-color:rgb(69, 107, 3);
+    color:white;
+    font-family: Verdana, sans-serif;
+}
+
+tfoot {
+    text-align:center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #D6EEEE;
+} 
+
+.td-right {
+    text-align:right;
+}
