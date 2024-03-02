@@ -1,0 +1,52 @@
+/* population.html CSS styles sheet
+    Abe Dresler 01Mar24
+*/
+
+* {  
+    font-size:20px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cityImg {
+    width:225px;
+    height:150px;
+}
+
+table {
+        width: 40%;
+        height:40px;
+        font-size: 15px;
+        padding: 20px;
+        border-collapse:spacing;
+}
+
+tbody tr:nth-child(even) {
+    background-color: yellow;
+}
+
+tfoot {
+    text-align:center;
+    color:black;
+    background-color:lightgoldenrodyellow;
+}
+
+thead {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+.td-right {
+    text-align:right;
+}
+
+
+
