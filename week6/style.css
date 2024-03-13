@@ -1,0 +1,97 @@
+/*
+    WEEK6 HOMEWORK ASSIGNMENT
+    STYLE.CSS
+*/
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: wheat;
+}
+
+div {
+    font-size: 20px;
+}
+
+h2-a {
+    background-color:darkblue;
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    padding: 1%;
+}
+
+p {
+    font-size: large;
+    margin-right: auto;
+    text-align: justify;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+ul li:hover {
+    font-weight: bolder;
+}
+
+.imgctr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.td1 {
+    width:30em;
+    font-size:medium;
+}
+
+th {
+    text-align: left;
+}
+
+#div_top {
+  width: auto;
+  height: 100px;
+  border: 2px solid black;
+  margin: 10px;
+  background-color:darkblue;
+  border-radius: 20px;
+  vertical-align:middle;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#div_bottom {
+    padding-top: 200px;
+    font-size: smaller;
+}
+
+.img1 {
+    height: 200px;
+    width: 200px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    float: right;
+    background-color: darkgoldenrod;
+    border: 20px groove red;
+}
+
+.img2 {
+    height: 200px;
+    width: 400px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    float: right;
+    background-color: darkgoldenrod;
+    border: 20px groove red;
+}
+
