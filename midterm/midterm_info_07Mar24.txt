@@ -1,0 +1,22 @@
+Mar 7, 2024 at 2:01pm
+
+I have updated the description of the midterm project to include
+all the correct items you are supposed to do. I have also placed
+a copy of a style.css there that you can download. This CSS file
+will modify your header and footer to fit at the top and bottom
+of your page.
+
+You should make any other modifications to the selectors for the
+headers and footers as you need, such as changing the gray to a
+color of your own choice, or maybe trying to center themenu items
+across the top of the page, etc.
+
+
+Have a great spring break.
+
+Mr McHardy
+
+PS. I forgot to mention that you will have more than one chance
+to get your midterm project right. When you first turn it in, I
+will probably send it back to you with some comments for how you
+might improve it. So be brave. Do your best, and turn it in on time.
