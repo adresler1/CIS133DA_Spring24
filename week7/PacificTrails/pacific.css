@@ -74,3 +74,50 @@ h3 {
     max-width: 2048px;
     box-shadow: 3px 3px 3px #777;
 }
+
+/* MEDIA QUERY: SCREEN ONLY & MIN WIDTH OF 600PX */
+@media only screen and (min-width:600px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        padding-left:2em;
+        padding-right: 2em;
+        list-style-type: none;
+        vertical-align: middle;
+    }
+
+    nav ul li {
+        border: none;
+        width: 12em;
+    }
+
+    h1 {
+        font-size:2rem;
+        letter-spacing: 1.25rem;
+    }
+}
+
+/* MEDIA QUERY: SCREEN ONLY & MIN WIDTH OF 1024PX */
+@media only screen and (min-width:1024px) {
+    body { 
+        background-image: linear-gradient(white 20%, lightblue 60%, white 100%);
+    }
+
+    nav ul {
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    #wrapper { 
+        background-color: #FFFFFF;
+        margin:auto;
+        /*margin-left: auto;
+        margin-right: auto;
+        width: 80%;*/
+        width:50%;
+        min-width: 960px;
+        max-width: 2048px;
+        box-shadow: 3px 3px 3px #777;
+    }
+}
