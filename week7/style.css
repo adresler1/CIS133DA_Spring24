@@ -1,0 +1,118 @@
+/*
+    WEEK7 HOMEWORK: CSS FILE
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background-color: skyblue;
+    color:black;
+    font-size: 10px;
+    line-height: 1.7;
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#top_banner {
+    font-size: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid black;
+    border-radius: 2rem;
+    background-color: beige;
+}
+
+/*
+    ID's and CLASSES
+*/
+
+.disp_row {
+    display:flex;
+    align-items: center;
+    padding: 0 0.25rem;
+}
+
+.disp_col {
+    float:left;
+    flex: 20%;
+    padding: 0 0.25rem;
+    margin-left:4rem;
+}
+
+.disp_col img {
+    margin-top: 0.75rem;
+    margin-right:0.75rem;
+    vertical-align:middle;
+}
+
+.img1 {
+    height: 12rem;
+    width:23%;
+    float:left;
+}
+
+/*
+    @MEDIA SCREEN DEFINITIONS
+    EVERYTHING ABOVE THIS LINE IS FOR DESKTOP
+*/
+/* MEDIA QUERY: FOR TABLETS */
+@media only screen and (max-width:1024px) {
+    #top_banner {
+        font-size: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        vertical-align: middle;
+        border: 3px solid black;
+        border-radius: 2rem;
+        background-color: red;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.2rem;
+    }
+
+    .img1 {
+        height:9rem;
+        width:22%;
+        float:left;
+    } 
+}
+
+/* MEDIA QUERY: FOR MOBILE PHONES */
+@media only screen and (min-width:480px) and (max-width:680px) {
+    #top_banner {
+        font-size: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        vertical-align: middle;
+        border: 3px solid black;
+        border-radius: 2rem;
+        background-color: green;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.0rem;
+    }
+
+    .img1 {
+        height:6rem;
+        width:22%;
+        float:left;
+    } 
+}
