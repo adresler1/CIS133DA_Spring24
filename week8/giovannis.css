@@ -1,0 +1,85 @@
+/*
+    WEEK8: HANDS ON ASSIGNMENT
+*/
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas: 
+        "hdr hdr"
+        "aside main"
+        "ftr ftr" ;
+}
+
+header, aside, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.25rem;
+    color: white;
+    background-color: rgb(33,87,51);
+    width:100%;
+    grid-area: hdr;
+}
+
+header div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    background-color: rgb(75,133,94);
+    font-size: 1.25rem;
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    color: white;
+    font-size:1.0rem;
+    background-color: rgb(53,112,72);
+    grid-area: ftr;
+}
+
+footer div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: rgb(33,87,51);
+}
+
+p {
+    line-height: 24px;
+    font-size: 1.0rem;
+}
+
+/*
+    CLASS AND ID DEFINITIONS
+*/
+
+.restName {
+    background-color: rgb(33,87,51);
+    color: white;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 3px;
+}
