@@ -1,3 +1,7 @@
+/* 
+    WEEK8 HOMEWORK ASSIGNMENT
+*/
+
 a {
     color: white;
     text-decoration: none;
@@ -7,6 +11,13 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display:grid;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-columns: 15% 1fr;
+    grid-template-areas: 
+        "hdr hdr"
+        "aside main"
+        "ftr ftr" ;
 }
 
 header, aside, main, footer {
@@ -15,12 +26,17 @@ header, aside, main, footer {
 }
 
 header {
-    color: white;
-    background-color: blue;
+    grid-area: hdr;
+}
+
+header div, footer div {
+    margin-left:auto;
+    margin-right:auto;
 }
 
 aside {
     background-color: yellow;
+    grid-area: aside;
 }
 
 aside > img {
@@ -28,14 +44,23 @@ aside > img {
 }
 
 main {
-}
+    grid-area: main;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 8% 20%;
+    justify-content: center;
+    }
 
 footer {
-    color: white;
-    background-color: blue;
+    grid-area: ftr;
 }
 
 header, footer {
+    color: white;
+    background-color: blue;
+    align-items:center;
+    display: inline-flex;
 }
 
 h1 {
@@ -55,9 +80,12 @@ p {
     background-color: lightblue;
     height: 200px;
     width: 200px;
+    margin-right:10px;
+    margin-bottom: 10px;
 }
 
 .amigo_div > img {
     width: 180px;
     height: 180px;
+    margin-top: 10px;
 }
