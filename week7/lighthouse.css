@@ -10,7 +10,7 @@ a {
     background-color: transparent;
   }
 
-a:link, visited {
+a:link, a:visited {
     color: darkblue;
   }
     
