@@ -10,14 +10,10 @@ a {
     background-color: transparent;
   }
 
-a:link {
+a:link, visited {
     color: darkblue;
   }
-  
-a:visited {
-    color: darkblue;
-  }
-  
+    
 a:hover {
     color: magenta;
   }
