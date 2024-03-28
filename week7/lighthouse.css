@@ -33,6 +33,7 @@ footer {
     clear: right;
     padding-bottom:20px;
     background-color: #FFFFFF;
+    margin-left:150px;
   }	
 
 header{ 
@@ -60,7 +61,7 @@ main {
     background-color: #FFFFFF;
     padding: 20px;
     display: block;
-    margin-left: 175px;
+    margin-left: 150px;
   } 
 
 nav { 
