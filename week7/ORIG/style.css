@@ -45,7 +45,8 @@ h1 {
 }
 
 .disp_col {
-    clear:left;
+    float:left;
+    flex: 20%;
     padding: 0 0.25rem;
     margin-left:5%;
 }
