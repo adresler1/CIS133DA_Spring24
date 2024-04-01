@@ -93,6 +93,7 @@ p {
 }
 
 .amigo_div > img {
+    float:left;
     width: 180px;
     height: 180px;
     padding: 5px;
@@ -100,7 +101,6 @@ p {
 
 .amigo_clear {
     background-color: lightblue;
-    clear:left;
     height: 200px;
     width: 200px;
     margin-right:10px;
@@ -109,6 +109,7 @@ p {
 }
 
 .amigo_clear > img {
+    clear:left;
     width: 180px;
     height: 180px;
     padding: 5px;
@@ -153,10 +154,10 @@ p {
         margin-right:10px;
         margin-bottom: 10px;
         padding: 5px;
-        float:left;
     }
 
     .amigo_div > img {
+        float:left;
         width: 130px;
         height: 130px;
     }
@@ -167,10 +168,10 @@ p {
         width: 150px;
         margin-right:10px;
         margin-bottom: 10px;
-        clear:left;
     }
 
     .amigo_clear > img {
+        clear:left;
         width: 130px;
         height: 130px;
         padding:5px;
@@ -215,6 +216,7 @@ p {
     }
 
     .amigo_div > img {
+        float:left;
         width: 75px;
         height: 75px;
         margin-top: 10px;
@@ -230,6 +232,7 @@ p {
     }
 
     .amigo_clear > img {
+        clear:left;
         width: 75px;
         height: 75px;
         margin-top: 10px;
