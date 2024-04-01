@@ -41,6 +41,7 @@ aside {
 
 aside > img {
     border-radius: 50%;
+    width:150px;
 }
 
 main {
@@ -51,6 +52,12 @@ main {
     padding: 8% 20%;
     justify-content: center;
     }
+
+main > img {
+    width:80%;
+    height:70%;
+    padding-top:10%;
+}
 
 footer {
     grid-area: ftr;
@@ -82,10 +89,150 @@ p {
     width: 200px;
     margin-right:10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .amigo_div > img {
     width: 180px;
     height: 180px;
-    margin-top: 10px;
+    padding: 5px;
+}
+
+.amigo_clear {
+    background-color: lightblue;
+    clear:left;
+    height: 200px;
+    width: 200px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.amigo_clear > img {
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+}
+
+/*
+    @MEDIA SCREEN DEFINITIONS
+    EVERYTHING ABOVE THIS LINE IS FOR DESKTOP
+*/
+/* MEDIA QUERY: FOR TABLETS */
+@media only screen and (max-width:1024px) {
+    main {
+        grid-area: main;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 8% 20%;
+        justify-content:center;
+        align-items: center;
+        }
+    
+    main > img {
+        aspect-ratio: 1/1;
+        height:60%;
+        width:100%;
+        padding-top:25%;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    aside > img {
+        border-radius: 50%;
+        width:100px;
+    }
+
+    .amigo_div {
+        background-color: lightblue;
+        height: 150px;
+        width: 150px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        float:left;
+    }
+
+    .amigo_div > img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .amigo_clear {
+        background-color: lightblue;
+        height: 150px;
+        width: 150px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        clear:left;
+    }
+
+    .amigo_clear > img {
+        width: 130px;
+        height: 130px;
+        padding:5px;
+    }
+}
+
+/* MEDIA QUERY: FOR MOBILE PHONES */
+@media only screen and (min-width:480px) and (max-width:680px) {
+    main {
+        grid-area: main;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 8% 20%;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    main > img {
+        aspect-ratio: 1/1;
+        height:30%;
+        width:100%;
+        padding-top:40%;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    aside > img {
+        border-radius: 50%;
+        width:70px;
+    }
+
+    .amigo_div {
+        background-color: lightblue;
+        width: 90px;
+        height: 90px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        padding:5px;
+    }
+
+    .amigo_div > img {
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+    }
+
+    .amigo_clear {
+        background-color: lightblue;
+        height: 90px;
+        width: 90px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        clear:left;
+    }
+
+    .amigo_clear > img {
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+    }
+
 }
