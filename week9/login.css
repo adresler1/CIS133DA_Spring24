@@ -1,0 +1,77 @@
+ /* 
+	WEEK9: STYLE SHEET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:bisque;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2.0;
+    padding: 2rem;
+    max-width: 600px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:200px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(0, 0, 128);
+}
+
+table {
+    background-color: lightgreen;
+    border: 2px solid;
+    border-collapse:collapse;
+}
+
+td {
+    width:45%;
+    text-align: center;
+}
+
+/* 
+    CLASSES & ID DEFINITIONS 
+*/
+
+.lastrow {
+    background-color: yellow;
+}
+
+#button_reset, #button_submit {
+    color:white;
+    font-size: 1.00rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#button_reset {
+    background-color: red;
+}
+
+#button_submit {
+    background-color: green;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
