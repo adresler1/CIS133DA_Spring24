@@ -1,0 +1,77 @@
+ /* 
+	WEEK9 HOMEWORK: ORDERFORM.CSS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:bisque;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2.0;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+h1, th {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(0, 0, 128);
+}
+
+img {
+    width:250px;
+    height:300px;
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+td {
+    width:50%   ;
+    text-align: left;
+}
+
+td > img {
+    vertical-align:middle;
+}
+
+th {
+    width:500px;
+    font-size:1.75rem;
+    font-style: italic;
+    text-align: left;
+}
+
+input[type=radio], input[type=checkbox], input[type=number] {
+    border: 0px;
+    width: 5%;
+    height: 1.25rem;
+}
+
+/* 
+    CLASSES & ID DEFINITIONS 
+*/
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+

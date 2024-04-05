@@ -1,0 +1,64 @@
+<!---
+    WEEK9 HANDSON ASSIGNMENT: LOGIN FORM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEK9: LOGIN FORM</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>Login Form</h1>
+
+    <form method="get">
+        <table>
+            <tr>
+                <td>    <!-- Request Login Name -->
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        autofocus 
+                        maxlength="20" 
+                        required 
+                        tabindex="1" 
+                        placeholder="Type your username"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>    <!-- Request Password -->
+                    <input 
+                        type="password" 
+                        name="pword" 
+                        id="pword" 
+                        maxlength="20" 
+                        required 
+                        tabindex="2" 
+                        placeholder="Type your password"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>    <!-- Display Reset Button -->
+                    <input 
+                        id="button_red" 
+                        type="reset" 
+                        value="Reset"
+                    >
+                </td>
+                <td>    <!-- Display Submit Button  -->
+                    <input 
+                        id="button_green" 
+                        type="submit" 
+                        tabindex="3" 
+                        value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

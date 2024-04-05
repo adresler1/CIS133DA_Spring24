@@ -1,0 +1,125 @@
+<!--
+    WEEK9 HOMEWORK: ODERFORM.HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week9: OrderForm</title>
+    <link rel="stylesheet" href="orderForm.css">
+</head>
+<body>
+    <!-- UPPER PORTION OF ORDER FORM -->
+    <div>       
+        <form method="get">
+            <table border="0">
+                <tr>
+                    <td colspan="1" rowspan="5" style="width:25%"><img src="./images/nasa_shirt.jpg"></td>
+                    <th>NASA Logo Polo Shirt</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="color">Color: </label> 
+                        <select id="color" name="color">
+                            <option value="">Select Color</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                        </select>
+                        <label for="qty">Quantity: </label>
+                        <input type="number" name="qty" id="qty"  required tabindex="1" size="4" min="0" max="100">
+                    </td>    
+                </tr>
+                <tr>
+                    <td>
+                        Size: 
+                        <input type="radio" id="small" name="small" value="SMALL" checked>
+                        <label for="small">Small</label>
+                        <input type="radio" id="medium" name="medium" value="MEDIUM">
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="large" name="large" value="LARGE">
+                        <label for="large">Large</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="inc_logo" name="inc_logo" value="INC_LOGO">
+                        <label for="inc_logo">Include Logo</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file_yes" name="file_yes" value="file_yes">
+                        <label for="file_yes">Choose File</label>
+                        <input type="checkbox" id="file_no" name="file_no"" value="file_no">
+                        <label for="file_no">No File Chosen</label>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>      <!-- END OF ORDER FORM UPPER SECTION -->
+
+    <div>       <!-- START OF ORDER FORM BOTTOM SECTION -->
+        <br><hr><br>
+        <form method="get">
+            <table border="1">
+                <tr>
+                    <td width="25px">
+                        <input type="text" name="firstname" id="firstname" autofocus maxlength="20" required tabindex="1" placeholder="First Name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="lastname" id="lastname" autofocus maxlength="20" required tabindex="2" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" name="address" id="address" autofocus maxlength="60" required tabindex="3" placeholder="Street Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="city" id="city" autofocus maxlength="20" required tabindex="4" placeholder="City">
+                    </td>
+                    <td>
+                        <input type="text" name="state" id="state" autofocus maxlength="3" required tabindex="5" placeholder="State">
+                    </td>
+                    <td>
+                        <input type="text" name="zip" id="zip" autofocus maxlength="5" required tabindex="6" placeholder="Zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="email" name="email" id="email" autofocus required tabindex="7" placeholder="Email Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="tel" name="phone" id="phone" autofocus required tabindex="7" placeholder="Phone Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Best Delivery Date:</td>
+                    <td colspan="3">
+                        <input type="date" name="date" id="date" autofocus required tabindex="8" placeholder="mm/dd/yyyy">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea rows="3" cols="150" name="comment" form="usrform">Special Instructions:</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input id="button_submit" type="submit" placeholder="SUBMIT">
+                    </td>
+                </tr>
+            </table>    
+        </form>
+    </div>
+</body>
+</html>
