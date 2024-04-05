@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week9: OrderForm</title>
+    <title>Week9: Order Form</title>
     <link rel="stylesheet" href="orderForm.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
                 </tr>
 
                 <tr>
-                    <td>
+                    <td>    <!-- Color pull down menu -->
                         <label for="color">Color: </label> 
                         <select id="color" name="color">
                             <option value="">Select Color</option>
@@ -37,6 +37,7 @@
                             <option value="white">White</option>
                         </select>
 
+                        <!-- Quantity -->
                         <label for="qty">Quantity: </label>
                         <input 
                             type="number" 
@@ -45,19 +46,18 @@
                             required 
                             tabindex="1" 
                             size="4" 
-                            min="1" max="100"
-                        >
+                            min="1" max="100">
                     </td>    
                 </tr>
 
-                <tr>
+                <tr>    <!-- Size Radio Buttons -->
                     <td>
                         Size:&emsp;
                         <input 
                             type="radio" 
                             id="size" 
                             name="small" 
-                            value="SMALL" 
+                            value="small" 
                             checked
                         >
                         <label for="small">Small</label>
@@ -66,104 +66,176 @@
                             type="radio" 
                             id="size" 
                             name="medium" 
-                            value="MEDIUM"
+                            value="medium"
                         >
                         <label for="medium">Medium</label>
                         <input 
                             type="radio" 
                             id="size" 
                             name="large" 
-                            value="LARGE"
+                            value="large"
                         >
                         <label for="large">Large</label>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td>    <!-- Include Logo? -->
                         <input 
                             type="checkbox" 
                             id="inc_logo" 
                             name="inc_logo" 
-                            value="INC_LOGO"
-                        >
+                            value="INC_LOGO">
                         <label for="inc_logo">Include Logo</label>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <!--<label for="file_yes">Choose File</label>*/ -->
+                    <td>    <!-- Choose File? -->
                         <input 
-                            type="checkbox" 
-                            id="file_yes" 
+                            type="checkbox2" 
+                            id="file_yes"
+                            class="file_yes"
                             name="file_yes" 
-                            value="Choose File"
-                        >
-                        <!-- <label for="file_no">No File Chosen</label>*/ -->
+                            value="Choose File">
                         <input 
-                            type="checkbox" 
+                            type="checkbox2" 
                             id="file_no" 
                             name="file_no" 
-                            value="No File Chosen"
-                        >
+                            value="No File Chosen">
                     </td>
                 </tr>
             </table>
     </div>      <!-- END OF ORDER FORM UPPER SECTION -->
 
-    <div>       <!-- START OF ORDER FORM BOTTOM SECTION -->
+    <div>       <!-- START OF ORDER FORM LOWER SECTION -->
         <br><hr><br>
         <form method="get">
-            <table border="1">
+            <table id="table_lower" border="0">
                 <tr>
-                    <td width="25px">
-                        <input type="text" name="firstname" id="firstname" autofocus maxlength="20" required tabindex="1" placeholder="First Name">
+                    <td >   <!-- First & Last Name Input -->
+                        <input 
+                            type="text"
+                            name="firstname" 
+                            id="firstname" 
+                            autofocus 
+                            maxlength="40" 
+                            required 
+                            tabindex="1" 
+                            placeholder="First Name">
                     </td>
-                    <td colspan="2">
-                        <input type="text" name="lastname" id="lastname" autofocus maxlength="20" required tabindex="2" placeholder="Last Name">
+                    <td  colspan="2">
+                        <input 
+                            type="text" 
+                            name="lastname" 
+                            id="lastname" 
+                            autofocus 
+                            maxlength="40" 
+                            required 
+                            tabindex="2" 
+                            placeholder="Last Name">
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="3">    <!-- Street Address Input -->
+                        <input 
+                            type="text" 
+                            name="address" 
+                            id="address" 
+                            autofocus 
+                            maxlength="60" 
+                            required 
+                            tabindex="3" 
+                            placeholder="Street Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td >   <!-- City Input -->
+                        <input 
+                            type="text" 
+                            name="city" 
+                            id="city" 
+                            autofocus 
+                            maxlength="20" 
+                            required tabindex="4" 
+                            placeholder="City">
+                    </td>
+                    <td >   <!-- State Input -->
+                        <input 
+                            type="text" 
+                            name="state" 
+                            id="state" 
+                            autofocus 
+                            maxlength="3" 
+                            required 
+                            tabindex="5" 
+                            placeholder="State">
+                    </td>
+                    <td >   <!-- Zip Code Input -->
+                        <input 
+                            type="text" 
+                            name="zip" 
+                            id="zip" 
+                            autofocus 
+                            maxlength="5" 
+                            required 
+                            tabindex="6" 
+                            placeholder="Zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">    <!-- Email Address Input -->
+                        <input 
+                            type="email"
+                            name="email" 
+                            id="email" 
+                            autofocus 
+                            required 
+                            tabindex="7" 
+                            placeholder="Email Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="3">   <!-- Phone Number Input -->
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            id="phone" 
+                            autofocus 
+                            required 
+                            tabindex="7" 
+                            placeholder="Phone Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Best Delivery Date:</td>    <!-- Delivery Date Input -->
                     <td colspan="3">
-                        <input type="text" name="address" id="address" autofocus maxlength="60" required tabindex="3" placeholder="Street Address">
+                        <input 
+                            type="date" 
+                            name="date" 
+                            id="date" 
+                            autofocus 
+                            required 
+                            tabindex="8" 
+                            placeholder="mm/dd/yyyy">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <input type="text" name="city" id="city" autofocus maxlength="20" required tabindex="4" placeholder="City">
-                    </td>
-                    <td>
-                        <input type="text" name="state" id="state" autofocus maxlength="3" required tabindex="5" placeholder="State">
-                    </td>
-                    <td>
-                        <input type="text" name="zip" id="zip" autofocus maxlength="5" required tabindex="6" placeholder="Zip">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <input type="email" name="email" id="email" autofocus required tabindex="7" placeholder="Email Address">
+                    <td colspan="3">    <!-- Special Instructions Input -->
+                        <textarea 
+                            rows="4" 
+                            cols="118" 
+                            name="comment" 
+                            form="usrform">Special Instructions:
+                        </textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <input type="tel" name="phone" id="phone" autofocus required tabindex="7" placeholder="Phone Number">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Best Delivery Date:</td>
-                    <td colspan="3">
-                        <input type="date" name="date" id="date" autofocus required tabindex="8" placeholder="mm/dd/yyyy">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <textarea rows="3" cols="150" name="comment" form="usrform">Special Instructions:</textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <input id="button_submit" type="submit" placeholder="SUBMIT">
+                    <td id="sub_right" colspan="3"> <!-- Submit Button -->
+                        <input 
+                            type="submit" 
+                            id="submit" 
+                            value="SUBMIT">
                     </td>
                 </tr>
             </table>    
