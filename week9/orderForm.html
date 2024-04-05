@@ -16,9 +16,15 @@
         <form method="get">
             <table border="0">
                 <tr>
-                    <td colspan="1" rowspan="5" style="width:25%"><img src="./images/nasa_shirt.jpg"></td>
+                    <td 
+                        colspan="1" 
+                        rowspan="5" 
+                        style="width:25%">
+                        <img src="./images/nasa_shirt.jpg">
+                    </td>
                     <th>NASA Logo Polo Shirt</th>
                 </tr>
+
                 <tr>
                     <td>
                         <label for="color">Color: </label> 
@@ -30,38 +36,80 @@
                             <option value="black">Black</option>
                             <option value="white">White</option>
                         </select>
+
                         <label for="qty">Quantity: </label>
-                        <input type="number" name="qty" id="qty"  required tabindex="1" size="4" min="0" max="100">
+                        <input 
+                            type="number" 
+                            name="qty" 
+                            id="qty"  
+                            required 
+                            tabindex="1" 
+                            size="4" 
+                            min="1" max="100"
+                        >
                     </td>    
                 </tr>
+
                 <tr>
                     <td>
-                        Size: 
-                        <input type="radio" id="small" name="small" value="SMALL" checked>
+                        Size:&emsp;
+                        <input 
+                            type="radio" 
+                            id="size" 
+                            name="small" 
+                            value="SMALL" 
+                            checked
+                        >
                         <label for="small">Small</label>
-                        <input type="radio" id="medium" name="medium" value="MEDIUM">
+
+                        <input 
+                            type="radio" 
+                            id="size" 
+                            name="medium" 
+                            value="MEDIUM"
+                        >
                         <label for="medium">Medium</label>
-                        <input type="radio" id="large" name="large" value="LARGE">
+                        <input 
+                            type="radio" 
+                            id="size" 
+                            name="large" 
+                            value="LARGE"
+                        >
                         <label for="large">Large</label>
                     </td>
                 </tr>
+
                 <tr>
                     <td>
-                        <input type="checkbox" id="inc_logo" name="inc_logo" value="INC_LOGO">
+                        <input 
+                            type="checkbox" 
+                            id="inc_logo" 
+                            name="inc_logo" 
+                            value="INC_LOGO"
+                        >
                         <label for="inc_logo">Include Logo</label>
                     </td>
                 </tr>
+
                 <tr>
                     <td>
-                        <input type="checkbox" id="file_yes" name="file_yes" value="file_yes">
-                        <label for="file_yes">Choose File</label>
-                        <input type="checkbox" id="file_no" name="file_no"" value="file_no">
-                        <label for="file_no">No File Chosen</label>
-
+                        <!--<label for="file_yes">Choose File</label>*/ -->
+                        <input 
+                            type="checkbox" 
+                            id="file_yes" 
+                            name="file_yes" 
+                            value="Choose File"
+                        >
+                        <!-- <label for="file_no">No File Chosen</label>*/ -->
+                        <input 
+                            type="checkbox" 
+                            id="file_no" 
+                            name="file_no" 
+                            value="No File Chosen"
+                        >
                     </td>
                 </tr>
             </table>
-        </form>
     </div>      <!-- END OF ORDER FORM UPPER SECTION -->
 
     <div>       <!-- START OF ORDER FORM BOTTOM SECTION -->
