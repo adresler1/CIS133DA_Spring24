@@ -1,3 +1,7 @@
+<!--
+    WEEK 11 HOMEWORK: CREATE A SCRIPT
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +22,7 @@
         <table>
             <tr>
                 <td>Amigo's Name</td>
-                <td><input type="text" name="amigo_name" id="amigo_name" required style="width:150px;" /></td>
+                <td><input type="text" name="amigo_name" id="amigo_name" placeholder="Your Pet's Name" required style="width:150px;" /></td>
             </tr>
             <tr>
                 <td>Amigo Type</td>
@@ -40,7 +44,9 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <!-- <td colspan="3" style="text-align:right"> -->
+                <td colspan="3" style="text-align:center">
+                    <input type="button" value="Start" onclick="startTicket()" />
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
                     <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
@@ -62,5 +68,29 @@
             <p><span class="boldText" id="amigoName">???</span></p>
         </amigoInfo>
     </ticket>
+
+    <!-- JV SCRIPTS -->
+    <script>
+        var oldName = document.getElementById("ownerName").innerHTML;
+        var oldDate = document.getElementById("visitDate").innerHTML;
+        var oldTitle = document.title;
+        var inputDate;
+        var inputName;
+
+        function startTicket() {
+            inputName = prompt("Please enter your name:");
+            document.title = inputName;
+            document.getElementById("ownerName").innerHTML = inputName;
+            inputDate = prompt("Please enter appointment date [MM/DD/YYYY]:");
+            document.getElementById("visitDate").innerHTML = inputDate;
+        }
+
+        function cancelTicket() {
+            alert("CANCEL BY USER");
+            document.title = oldTitle;
+            document.getElementById("ownerName").innerHTML = oldName;
+            document.getElementById("visitDate").innerHTML = oldDate;
+        }
+    </script>
 </body>
 </html>
