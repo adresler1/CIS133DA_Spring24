@@ -43,24 +43,24 @@
     <table>
         <tr>
             <!-- DEFINE ONCLICK EVENTS -->
-            <td><button onclick="changeTitle()">Change Title</button></td>
-            <td><button onclick="changeName()">Change Name</button></td>
-            <td><button onclick="changeColor()">Change Color</button></td>
+            <td><button onclick='changeTitle()'>Change Title</button></td>
+            <td><button onclick='changeName()'>Change Name</button></td>
+            <td><button onclick='changeColor()'>Change Color</button></td>
         </tr>
     </table>
 
     <!-- DEFINE JAVASCRIPT FUNCTIONS -->
-    <script type="text/javascript">
+    <script type='text/javascript'>
         function changeTitle() {
-            let strTitle = prompt("What do you want the title of this page to be?");
+            let strTitle = prompt('What do you want the title of this page to be?');
             document.title = strTitle;
         }
         function changeName() {
-            let strName = prompt("Who is your favorite celebrity?");
-            document.getElementById("celebrity").innerHTML = strName;
+            let strName = prompt('Who is your favorite celebrity?');
+            document.getElementById('celebrity').innerHTML = strName;
         }
         function changeColor() {
-            let strColor = prompt("What is your favorite color?");
+            let strColor = prompt('What is your favorite color?');
             document.body.style.backgroundColor = strColor;
         }
     </script>

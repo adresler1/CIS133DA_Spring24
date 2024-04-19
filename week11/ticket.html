@@ -71,25 +71,23 @@
 
     <!-- JS SCRIPTS -->
     <script>
-        var oldName = document.getElementById("ownerName").innerHTML;
-        var oldDate = document.getElementById("visitDate").innerHTML;
-        var oldTitle = document.title;
-        var inputDate;
-        var inputName;
+        let oldName = document.getElementById('ownerName').innerHTML;
+        let oldDate = document.getElementById('visitDate').innerHTML;
+        let oldTitle = document.title;
 
         function startTicket() {
-            inputName = prompt("Please enter your name:");
-            document.title = inputName;
-            document.getElementById("ownerName").innerHTML = inputName;
-            inputDate = prompt("Please enter appointment date [MM/DD/YYYY]:");
-            document.getElementById("visitDate").innerHTML = inputDate;
+            let inputName = prompt('Please enter your name:');
+            document.title = 'Name: ' + inputName;
+            document.getElementById('ownerName').innerHTML = inputName;
+            let inputDate = prompt('Please enter appointment date [MM/DD/YYYY]:');
+            document.getElementById('visitDate').innerHTML = inputDate;
         }
 
         function cancelTicket() {
-            alert("CANCEL BY USER");
+            alert('CANCEL BY USER');
             document.title = oldTitle;
-            document.getElementById("ownerName").innerHTML = oldName;
-            document.getElementById("visitDate").innerHTML = oldDate;
+            document.getElementById('ownerName').innerHTML = oldName;
+            document.getElementById('visitDate').innerHTML = oldDate;
         }
     </script>
 </body>
