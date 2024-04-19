@@ -52,18 +52,15 @@
     <!-- DEFINE JAVASCRIPT FUNCTIONS -->
     <script type="text/javascript">
         function changeTitle() {
-            var strTitle;
-            strTitle = prompt("What do you want the title of this page to be?");
+            let strTitle = prompt("What do you want the title of this page to be?");
             document.title = strTitle;
         }
         function changeName() {
-            var strName;
-            strName = prompt("Who is your favorite celebrity?");
+            let strName = prompt("Who is your favorite celebrity?");
             document.getElementById("celebrity").innerHTML = strName;
         }
         function changeColor() {
-            var strColor;
-            strColor = prompt("What is your favorite color?");
+            let strColor = prompt("What is your favorite color?");
             document.body.style.backgroundColor = strColor;
         }
     </script>
