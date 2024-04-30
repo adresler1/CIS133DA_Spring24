@@ -1,0 +1,337 @@
+<!--
+    CIS133: FINAL PROJECT PURCHASE.HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURCHASE</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <!-- TOP BANNER -->
+    <div id="div_top">
+        <img src="./images/GENERAL/shadow.png" height="75px" width="150px">
+        <h2 id="h2-a">&emsp;Purchase a Sailplane&emsp;&nbsp;</h2>
+        <img src="./images/GENERAL/shadow.png" height="75px" width="150px">
+    </div>
+
+    <div>   <!-- Top Div for Radio Buttons -->
+        <form method="get">
+            <table id="tb-2" border="0">
+                <tr>    <!-- "Type" Radio Buttons -->
+                    <td>
+                        Type:&emsp;
+                        <label for="type">World Class</label>
+                        <input 
+                            type="radio" 
+                            id="type" 
+                            name="wclass" 
+                            value="wclass" 
+                        >
+                        <label for="type">15-M</label>
+                        <input 
+                            type="radio" 
+                            id="type" 
+                            name="15M" 
+                            value="15M"
+                        >
+                        <label for="type">18-M</label>
+                        <input 
+                            type="radio" 
+                            id="type" 
+                            name="18M" 
+                            value="18M"
+                        >
+                        <label for="type">20-M</label>
+                        <input 
+                            type="radio" 
+                            id="type" 
+                            name="20M" 
+                            value="20M"
+                        >
+                        <label for="type">Club</label>
+                        <input 
+                            type="radio" 
+                            id="type" 
+                            name="club" 
+                            value="club"
+                            checked
+                        >
+                    </td>
+
+                <!-- "Make" Radio Buttons -->
+                </tr>
+                    <td>
+                        Make:&emsp;
+                        <label for="make">Grob</label>
+                        <input 
+                            type="radio" 
+                            id="make" 
+                            name="grob" 
+                            value="grob" 
+                        >
+                        <label for="make">GlassFlugel</label>
+                        <input 
+                            type="radio" 
+                            id="make" 
+                            name="glasflugel" 
+                            value="glasflugel"
+                        >
+                        <label for="make">Jonker</label>
+                        <input 
+                            type="radio" 
+                            id="make" 
+                            name="jonker" 
+                            value="jonker"
+                        >
+                        <label for="make">Pilatus</label>
+                        <input 
+                            type="radio" 
+                            id="make" 
+                            name="pilatus" 
+                            value="pilatus"
+                        >
+                    </td>
+                
+                    <!-- "Model" Radio Buttons -->
+                    <tr>
+                        <td>
+                            Model:&emsp;
+                            <label for="model">Model-A</label>
+                            <input 
+                                type="radio" 
+                                id="model" 
+                                name="model-a" 
+                                value="model-a"
+                            >
+                            <label for="model">Model-B</label>
+                            <input 
+                                type="radio" 
+                                id="model" 
+                                name="model-b" 
+                                value="model-b"
+                            >
+                            <label for="model">Model-C</label>
+                            <input 
+                                type="radio" 
+                                id="model" 
+                                name="model-c" 
+                                value="model-c"
+                            >    
+                        </td>
+                    </tr>
+
+                    <!-- Radio buttons for number of seats -->
+                    <tr>
+                        <td>
+                            Seats:&emsp;
+                            <label for="seats">1-Seat</label>
+                            <input 
+                                type="radio" 
+                                id="seats" 
+                                name="seat1" 
+                                value="seat1"
+                                checked
+                            >
+                            <label for="seats">2-Seats</label>
+                            <input 
+                                type="radio" 
+                                id="seats" 
+                                name="seat2" 
+                                value="seat2"
+                            >    
+                        </td>
+                    </tr>
+            </table>
+        </form>
+    </div>
+
+    <div>    <!-- Div for Pull Down Menus--> 
+        <form method="get">
+            <table id="tb-3" border="0">
+                <tr>    <!-- OPTION-1 PULL DOWN MENU -->
+                    <td>
+                        <label for="option1">Option-1: </label> 
+                        <select id="option1" name="option1">
+                            <option value="">Select Option 1</option>
+                            <option value="harness">Harness, 5-Point</option>
+                            <option value="batt-hiperf">Battery, Hi-Perf</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="elt">ELT Beacon</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="gps">GPS, Aviation</option>
+                            <option value="oxygen">Oxygen</option>
+                            <option value="chute">Parachute</option>
+                            <option value="vario">Variometer, Electric</option>
+                        </select>
+                    </td>
+                
+                    <!-- OPTION-2 PULL DOWN MENU -->
+                    <td>
+                        <label for="option2">Option-2: </label> 
+                        <select id="option2" name="option2">
+                            <option value="">Select Option 2</option>
+                            <option value="harness">Harness, 5-Point</option>
+                            <option value="batt-hiperf">Battery, Hi-Perf</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="elt">ELT Beacon</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="gps">GPS, Aviation</option>
+                            <option value="oxygen">Oxygen</option>
+                            <option value="chute">Parachute</option>
+                            <option value="vario">Variometer, Electric</option>
+                    </td>
+
+                </tr>       <!-- OPTION-3 PULL DOWN MENU -->
+                    <td>
+                        <label for="option3">Option-3: </label> 
+                        <select id="option3" name="option3">
+                            <option value="">Select Option 3</option>
+                            <option value="harness">Harness, 5-Point</option>
+                            <option value="batt-hiperf">Battery, Hi-Perf</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="elt">ELT Beacon</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="gps">GPS, Aviation</option>
+                            <option value="oxygen">Oxygen</option>
+                            <option value="chute">Parachute</option>
+                            <option value="vario">Variometer, Electric</option>
+                    </td>
+
+                       <!-- OPTION-4 PULL DOWN MENU -->
+                    <td>
+                        <label for="option4">Option-4: </label> 
+                        <select id="option4" name="option4">
+                            <option value="">Select Option 4</option>
+                            <option value="harness">Harness, 5-Point</option>
+                            <option value="batt-hiperf">Battery, Hi-Perf</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="elt">ELT Beacon</option>
+                            <option value="batt-mon">Battery, Monitor</option>
+                            <option value="gps">GPS, Aviation</option>
+                            <option value="oxygen">Oxygen</option>
+                            <option value="chute">Parachute</option>
+                            <option value="vario">Variometer, Electric</option>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr>
+    <div>   <!-- Div to Obtain Customer Info -->
+        <form method="get">
+            <table id="tb-4" border="0">
+                <tr>    <!-- Obtain Customer Info -->
+                    <td>
+                        Customer Name: &emsp;
+                        <input 
+                        type="text"
+                        name="custname" 
+                        id="custname" 
+                        autofocus 
+                        maxlength="60" 
+                        required 
+                        tabindex="1" 
+                        placeholder="First/Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">    <!-- Street Address Input -->
+                        Street Address:&emsp;
+                        <input 
+                            type="text" 
+                            name="address" 
+                            id="address" 
+                            autofocus 
+                            maxlength="60" 
+                            required 
+                            tabindex="2" 
+                            placeholder="Street Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td >   <!-- City Input -->
+                        City:&emsp;
+                        <input 
+                            type="text" 
+                            name="city" 
+                            id="city" 
+                            autofocus 
+                            maxlength="20" 
+                            required tabindex="3" 
+                            placeholder="City">
+                    </td>
+                    <td >   <!-- State Input -->
+                        State:&emsp;
+                        <input 
+                            type="text" 
+                            name="state" 
+                            id="state" 
+                            autofocus 
+                            maxlength="3" 
+                            required 
+                            tabindex="4" 
+                            placeholder="State">
+                    </td>
+                    <td >   <!-- Zip Code Input -->
+                        Zip:&emsp;
+                        <input 
+                            type="text" 
+                            name="zip" 
+                            id="zip" 
+                            autofocus 
+                            maxlength="5" 
+                            required 
+                            tabindex="5" 
+                            placeholder="Zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:&emsp;
+                        <input 
+                        type="email"
+                        name="email" 
+                        id="email" 
+                        autofocus 
+                        required 
+                        tabindex="7" 
+                        placeholder="Email Address">
+                    </td>
+
+                    <td>
+                        Phone:&emsp;
+                        <input 
+                        type="tel" 
+                        name="phone" 
+                        id="phone" 
+                        autofocus 
+                        required 
+                        tabindex="7" 
+                        placeholder="Phone Number">
+                    </td>                
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <nav>   <!-- Nav Menu -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stypes.html">Types</a></li>
+            <li><a href="thermals.html">Thermals</a></li>   
+            <li><a href="launching.html">Launching</a></li>
+            <li><a href="license.html">License</a></li>
+            <li><a href="anatomy.html">Anatomy</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="purchase.html">Purchase</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
