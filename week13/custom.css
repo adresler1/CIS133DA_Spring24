@@ -116,13 +116,13 @@ table, td, th {
     font-size:50px;
     font-weight: bold;
     padding: 1%;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .h2_1 {
     margin-bottom: 0;
-    padding-left:12em;
+    padding-left:10em;
     font-size:2.0em;
 }
 
@@ -139,7 +139,7 @@ table, td, th {
 .img2 {
     height: 125px;
     width: 225px;
-    margin-left:35px;
+    margin: left 30px;
     padding-right: 15px;
     padding-bottom: 30px;
     float:left;
@@ -148,7 +148,7 @@ table, td, th {
 .img3 {
     height: 225px;
     width: 350px;
-    margin-left:35px;
+    margin-left:0px;
     padding-right: 15px;
     padding-bottom: 30px;
     float:left;
@@ -212,12 +212,21 @@ table, td, th {
         height:25px;
         font-size:1rem;
     }
+}
 
+#tb-5 {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#td-1 {
     input[type=submit] {
-        width: 20%;
-        height:30px;
+        width: 10em;
+        height:40px;
         font-size: 1rem;
-        background-color: lightgray;
+        font-weight: bold;
+        color:white;
+        background-color: red;
     }    
 }
 
